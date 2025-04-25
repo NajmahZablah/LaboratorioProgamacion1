@@ -10,7 +10,6 @@ package laboratorio.pkg1;
  */
 public class Zablah_Najmah_Clics {
     public static void main(String[] args) {
-        
         //Datos que conocemos 
         int clics030=60;
         int clics025=100;
@@ -20,14 +19,14 @@ public class Zablah_Najmah_Clics {
         double costo100clics=0.25;
         double costo20clics=0.80;
         
-        //Costo total
+        //Calcular el costo total
         double CostoTotal=(clics030*costo60clics)+(clics025*costo100clics)+(clics080*costo20clics);
         
-        //Calculo del costo promedio
+        //Calcular el total de clics y el costo promedio
         int TotalClics=(clics030+clics025+clics080);
         double CostoPromedio=(CostoTotal/TotalClics);
         
-        //Calculo del ISV (16%)
+        //Calcular el ISV (16%)
         double ISV=(CostoTotal*0.16);
         
         //Total con ISV

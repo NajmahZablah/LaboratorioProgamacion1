@@ -12,7 +12,6 @@ import java.util.Scanner;
  */
 public class Zablah_Najmah_PlanilladeEmpleado {
      public static void main(String[] args) {
-         
          //Las horas laboradas al mes y precio por hora deben ser asignadas por el usuario
          Scanner scanner=new Scanner(System.in).useDelimiter("\\n");
          
