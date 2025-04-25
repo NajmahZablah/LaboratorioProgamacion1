@@ -12,7 +12,7 @@ import java.util.Scanner;
  */
 public class Zablah_Najmah_Cuotas {
      public static void main(String[] args) {
-         //Blah blah blah blah...
+         //El usuario debe ingresar los siguientes datos...
          Scanner scanner=new Scanner(System.in);
          
          System.out.print("Ingresar el monto del prestamo: HNL.");
@@ -21,13 +21,15 @@ public class Zablah_Najmah_Cuotas {
          System.out.print("Ingresar el plazo en meses: ");
          int PlazoMensual=scanner.nextInt();
          
+         //El porcentaje debe de convertirse a decimal
          System.out.print("Ingresar la tasa de interes mensual: %");
          int TasaInteresMensual=scanner.nextInt();
           double PorcentajeDecimalTIM=(TasaInteresMensual/100);
          
          System.out.print("Ingresar comision fija por cuota: HNL.");
          double ComisionFija=scanner.nextDouble();
-         
+        
+         //El porcentaje debe convertirse a decimal
          System.out.print("Ingresar el porcentaje del seguro de la cuota: %");
          int SeguroCuota=scanner.nextInt();
          double PorcentajeSC=(SeguroCuota/100);
