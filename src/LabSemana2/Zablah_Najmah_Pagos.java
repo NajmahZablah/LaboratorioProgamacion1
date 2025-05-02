@@ -4,6 +4,7 @@
  */
 package LabSemana2;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 /**
@@ -59,6 +60,7 @@ public class Zablah_Najmah_Pagos {
                 System.out.println("Categoría inválida");
                 return;     
         }
+        DecimalFormat df=new DecimalFormat("#.##");
         pagoTotal=((horasNormales*pagoNormal)+pagoHorasExtras);
          
         //Salida
@@ -68,7 +70,7 @@ public class Zablah_Najmah_Pagos {
         System.out.println("Cantidad de horas trabajadas: "+cantidadHoras);
         System.out.println("Categoria: "+categoria);
         System.out.println("Horas extras:" +horasExtras);
-        System.out.println("Total a pagar: "+pagoTotal);
+        System.out.println("Total a pagar: "+df.format(pagoTotal));
         }
     }
 
