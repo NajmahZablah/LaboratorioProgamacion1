@@ -64,7 +64,7 @@ public class Zablah_Najmah_Estructura {
                             String palabra= scannerPalabras.next();
                             String palabraAlReves=new StringBuilder(palabra).reverse().toString();
                             if (palabra.equalsIgnoreCase(palabraAlReves)) {
-                              System.out.println("La palabra" +palabra+ "es un palindromo");
+                              System.out.println("La palabra " +palabra+ " es un palindromo");
                               palindromoEncontrado= true;
                             }
                         }
@@ -165,7 +165,7 @@ public class Zablah_Najmah_Estructura {
                         System.out.println("Votos por el AMARILLO: "+votoAmarillo);
                         System.out.println("Votos nulos: "+votoNulo);
                         System.out.println("Total de votos validos: "+votosValidos);
-                        System.out.println("Porcentaje de votos validos: "+(porcentajeValido*100)+"%");
+                        System.out.println("Porcentaje de votos validos: "+(porcentajeValido * 100)+"%");
                         
                         if (porcentajeValido >=0.60) {
                             int maxVotos=Math.max(votoAzul, Math.max(votoRojo, Math.max(votoNegro, votoAmarillo)));
